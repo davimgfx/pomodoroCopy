@@ -10,7 +10,7 @@ export default class Timer {
 		};
 
 		this.interval = null;
-		this.remainingSeconds = 930;
+		this.remainingSeconds = 50*60;
 
 		this.updateInterfaceTime();
 
