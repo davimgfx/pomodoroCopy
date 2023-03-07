@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,500;1,600;1,700;1,800&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,500;1,600;1,700;1,800&display=swap");
 
-* {
+  * {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -8,23 +8,23 @@
   box-sizing: border-box;
   font-family: "Patrick Hand", cursive;
   font-family: "Poppins", sans-serif;
-}
+  }
 
-body {
+  body {
   background: #ba4949;
-}
+  }
 
-header {
+  header {
   width: 100%;
   height: 80%;
-  box-shadow: -1px -1px 3px black;
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.548);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 180px;
-}
+  gap: 250px;
+  }
 
-.logo {
+  .logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,24 +32,20 @@ header {
   color: white;
   font-size: 1.2rem;
   font-weight: 500;
-}
+  }
 
-#imglogo {
+  #imglogo {
   position: relative;
   height: 20px;
   width: 20px;
   top: 1px;
-}
+  }
 
-.hamburger {
-  display: none;
-}
-
-.nav-bar ul {
+  .nav-bar ul {
   display: flex;
-}
+  }
 
-.nav-bar ul li a {
+  .nav-bar ul li a {
   display: block;
   color: #f6ffff;
   background: #c86d6d;
@@ -58,58 +54,58 @@ header {
   transition: 0.2s;
   margin: 15px 5px;
   border-radius: 5px;
-}
+  }
 
-.nav-bar ul li a:hover {
+  .nav-bar ul li a:hover {
   background: #d87676;
   transition: all 600ms ease;
   text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.425);
-}
+  }
 
-.nav-bar ul li a:active {
+  .nav-bar ul li a:active {
   position: relative;
-top: 2px
-}
-/* @media only screen and (max-width: 615px) {
+  top: 2px;
+  }
+  /* @media only screen and (max-width: 615px) {
   .hamburger {
-    display: block;
-    cursor: pointer;
-    margin: 21.5px;
+  display: block;
+  cursor: pointer;
+  margin: 21.5px;
   }
 
   .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: #f6ffff;
-    margin: 3px 0;
+  width: 30px;
+  height: 3px;
+  background: #f6ffff;
+  margin: 3px 0;
   }
 
   .nav-bar {
-    height: 250px;
-    position: absolute;
-    top: 62px;
-    left: 0px;
-    right: 0;
-    width: 100vw;
-    background: #ba4949;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
-    transition: 0.2s;
+  height: 250px;
+  position: absolute;
+  top: 62px;
+  left: 0px;
+  right: 0;
+  width: 100vw;
+  background: #ba4949;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
+  transition: 0.2s;
   }
 
   .nav-bar ul {
-    display: block;
-    width: fit-content;
-    margin: 60px auto 0 auto;
-    text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 60px auto 0 auto;
+  text-align: center;
   }
-} */
+  } */
 
-.nav-bar-timer ul {
+  .nav__bar--timer ul {
   display: flex;
   font-weight: 400;
-}
+  }
 
-.nav-bar-timer ul li a {
+  .nav__bar--timer ul li a {
   display: block;
   color: #f6ffff;
   background: #c15c5c;
@@ -117,20 +113,20 @@ top: 2px
   padding: 3px 8px;
   transition: 0.2s;
   border-radius: 5px;
-}
+  }
 
-.nav-bar-timer ul li a:hover {
-  background: #a44e4e;
-  transition: all 600ms ease;
-  text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.425);
-}
-.nav-bar-timer ul li a:active {
+  .nav__bar--timer ul li a:active {
   position: relative;
   top: 2px;
-}
-.timer {
+  }
+
+  .nav__bar--timer ul li a:hover {
+  background-color: #a44e4e;
+  }
+
+  .timer {
   height: 320px;
-  max-width: 480px;
+  width: 480px;
   margin: 50px auto;
   padding: 20px 0px 30px;
   background: #c15c5c;
@@ -142,18 +138,14 @@ top: 2px
   font-size: 120px;
   color: white;
   font-weight: 600;
-}
-
-/* @media only screen and (max-width: 680px) {
-  .header {
-    gap: 150px;
   }
-  .timer {
-    font-size: 120px;
-  }
-} */
 
-#button {
+  .timer__part {
+  padding: 0;
+  margin: 0px;
+  }
+
+  #button {
   display: block;
   cursor: pointer;
   border: none;
@@ -166,4 +158,4 @@ top: 2px
   font-weight: 400;
   background-color: white;
   transition: color 0.5s ease-in-out 0s;
-}
+  }
