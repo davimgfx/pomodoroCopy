@@ -10,7 +10,7 @@ export default class Timer {
 		};
 
 		this.interval = null;
-		this.remainingSeconds = 30;
+		this.remainingSeconds = 50*60;
 	
 		this.el.control.addEventListener("click", () => {
 			if(this.interval === null){
@@ -21,7 +21,7 @@ export default class Timer {
 		});
 
 		this.el.reset.addEventListener("click", () => {
-			this.remainingSeconds = 30
+			this.remainingSeconds = 50*60
 			this.updateInterfaceTime()
 		});
 	}

@@ -1,166 +1,145 @@
-  @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,300;0,500;1,600;1,700;1,800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
 
-  * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  box-sizing: border-box;
-  font-family: "Patrick Hand", cursive;
-  font-family: "Poppins", sans-serif;
-  }
+body {
+	background: #ba4949;
+}
 
-  body {
-  background: #ba4949;
-  }
+header {
+	width: 100%;
+	height: 80%;
+	box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.548);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 250px;
+}
 
-  header {
-  width: 100%;
-  height: 80%;
-  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.548);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 250px;
-  }
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3px;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
 
-  .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 500;
-  }
+#imglogo {
+	position: relative;
+	height: 20px;
+	width: 20px;
+	top: 1px;
+}
 
-  #imglogo {
-  position: relative;
-  height: 20px;
-  width: 20px;
-  top: 1px;
-  }
+.nav-bar ul {
+	display: flex;
+}
 
-  .nav-bar ul {
-  display: flex;
-  }
+.nav-bar ul li a {
+	display: block;
+	color: #f6ffff;
+	background: #c86d6d;
+	font-size: 13px;
+	padding: 5px 15px;
+	transition: 0.2s;
+	margin: 15px 5px;
+	border-radius: 5px;
+}
 
-  .nav-bar ul li a {
-  display: block;
-  color: #f6ffff;
-  background: #c86d6d;
-  font-size: 13px;
-  padding: 5px 15px;
-  transition: 0.2s;
-  margin: 15px 5px;
-  border-radius: 5px;
-  }
+.nav-bar ul li a:hover {
+	background: #d87676;
+	transition: all 600ms ease;
+	text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.425);
+}
 
-  .nav-bar ul li a:hover {
-  background: #d87676;
-  transition: all 600ms ease;
-  text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.425);
-  }
+.nav-bar ul li a:active {
+	position: relative;
+	top: 2px;
+}
 
-  .nav-bar ul li a:active {
-  position: relative;
-  top: 2px;
-  }
-  /* @media only screen and (max-width: 615px) {
-  .hamburger {
-  display: block;
-  cursor: pointer;
-  margin: 21.5px;
-  }
+.nav__bar--timer ul {
+	display: flex;
+	font-weight: 400;
+	padding: 0 0 15px 0;
+}
 
-  .hamburger .line {
-  width: 30px;
-  height: 3px;
-  background: #f6ffff;
-  margin: 3px 0;
-  }
+.nav__bar--timer ul li a {
+	display: block;
+	color: #f6ffff;
+	background: #c15c5c;
+	font-size: 16px;
+	padding: 3px 8px;
+	transition: 0.2s;
+	border-radius: 5px;
+}
 
-  .nav-bar {
-  height: 250px;
-  position: absolute;
-  top: 62px;
-  left: 0px;
-  right: 0;
-  width: 100vw;
-  background: #ba4949;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.212);
-  transition: 0.2s;
-  }
+.nav__bar--timer ul li a:active {
+	position: relative;
+	top: 2px;
+}
 
-  .nav-bar ul {
-  display: block;
-  width: fit-content;
-  margin: 60px auto 0 auto;
-  text-align: center;
-  }
-  } */
+.nav__bar--timer ul li a:hover {
+	background: #a44e4e;
+}
 
-  .nav__bar--timer ul {
-  display: flex;
-  font-weight: 400;
-  }
+.timer {
+	height: 320px;
+	width: 480px;
+	margin: 50px auto;
+	padding: 20px 0px 30px;
+	background: #c15c5c;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-size: 120px;
+	color: white;
+	font-weight: 600;
+}
 
-  .nav__bar--timer ul li a {
-  display: block;
-  color: #f6ffff;
-  background: #c15c5c;
-  font-size: 16px;
-  padding: 3px 8px;
-  transition: 0.2s;
-  border-radius: 5px;
-  }
+.timer__clock{
+	padding-bottom: 20px;
+}
+.timer__part {
+	padding: 0px;
+	margin: 0px;
+}
 
-  .nav__bar--timer ul li a:active {
-  position: relative;
-  top: 2px;
-  }
+.pomodoro{
+	background: red;
+}
 
-  .nav__bar--timer ul li a:hover {
-  background-color: #a44e4e;
-  }
+.controls {
+	display: flex;
+	gap: 18px;
+}
 
-  .timer {
-  height: 320px;
-  width: 480px;
-  margin: 50px auto;
-  padding: 20px 0px 30px;
-  background: #c15c5c;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 120px;
-  color: white;
-  font-weight: 600;
-  }
+.button {
+	display: block;
+	cursor: pointer;
+	border: none;
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+	box-shadow: rgb(255, 255, 255) 0px 6px 0px;
+	font-size: 22px;
+	color: rgb(186, 73, 73);
+	font-weight: 500;
+	background-color: white;
+	transition: color 0.5s ease-in-out 0s;
+	box-shadow: inset 0px -3px 1px 0px rgb(212, 212, 212);
+}
 
-  .timer__part {
-  padding: 0;
-  margin: 0px;
-  }
-
-  .controls{
-    display: flex;
-    gap: 10px;
-  }
-
-  .button {
-  display: block;
-  cursor: pointer;
-  border: none;
-  width: 200px;
-  height: 40px;
-  border-radius: 5px;
-  box-shadow: rgb(255, 255, 255) 0px 6px 0px;
-  font-size: 22px;
-  color: rgb(186, 73, 73);
-  font-weight: 400;
-  background-color: white;
-  transition: color 0.5s ease-in-out 0s;
-  }
+.button:active {
+	position: relative;
+	top: 1px;
+}
