@@ -145,12 +145,17 @@
   margin: 0px;
   }
 
-  #button {
+  .controls{
+    display: flex;
+    gap: 10px;
+  }
+
+  .button {
   display: block;
   cursor: pointer;
   border: none;
   width: 200px;
-  height: 200px;
+  height: 40px;
   border-radius: 5px;
   box-shadow: rgb(255, 255, 255) 0px 6px 0px;
   font-size: 22px;
