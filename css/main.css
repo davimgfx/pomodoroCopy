@@ -114,10 +114,6 @@ header {
 	margin: 0px;
 }
 
-.pomodoro{
-	background: red;
-}
-
 .controls {
 	display: flex;
 	gap: 18px;
@@ -142,4 +138,68 @@ header {
 .button:active {
 	position: relative;
 	top: 1px;
+}
+
+#setting-dialog{
+	border: none;
+	margin: 3.5rem auto;
+	padding: 10px;
+	height: 350px;
+	width: 400px;
+	border-radius: 10px;
+	box-shadow: 3px 4px 13px #00000047;
+}
+
+dialog[open]::backdrop {
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+dialog h4{
+	padding: 10px;
+	color: rgb(61, 61, 61);
+	font-weight: 700;
+}
+
+.header-dialog{
+	display: flex;
+	gap: 280px;
+	border-bottom: 4px solid rgba(0, 0, 0, 0.062);
+}
+
+#close__modal--setting{
+	cursor: pointer;
+	position: relative;
+	top: -5px;
+	background: none;
+	border: none;
+	font-size: 35px;
+	color: gray;
+}
+
+.timer-dialog{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-grow: 3;
+	gap: 25px;
+	padding: 15px 10px;
+	font-size: 14px;
+	color: gray;
+}
+
+.input__timer-dialog{
+	width: 100px;
+	height: 35px;
+	border: none;
+	background: rgba(128, 128, 128, 0.212);
+	border-radius: 5px;
+	text-indent: 10px;
+}
+
+.block{
+	display: block;
+	font-size: 16px;
+	padding-top: 20px;
+	text-indent: 10px;
+	color: rgb(56, 56, 56);
 }

@@ -16,13 +16,26 @@ Pomofocus</div>
                 <ul>
                     <li><a href="" class="report">Report</a></a>
                     </li>
-                    <li><a href="" class="setting">Setting</a></li>
+                    <li><a href="#" class="setting" id="open__modal--setting">Setting</a></li>
                     <li><a href="" class="login">Login</a></li>
                 </ul>
             </nav>
         </header>
         <div class="timer">
         </div>
+        <dialog id="setting-dialog">
+            <div class="header-dialog">
+                <h4>Setting</h4>
+                <button id="close__modal--setting">&times;</button>
+            </div>             
+            <h2 class="block">Time (minutes)</h2>
+            <div class="timer-dialog">
+   
+                <div class="pomodoro__timer--dialog">Pomodoro <input type="number" class="input__timer-dialog"></div>
+                <div class="shortbreak__timer--dialog">Short Break <input type="number" class="input__timer-dialog"></div>
+                <div class="longbreak__timer--dialog">Long Break <input type="number" class="input__timer-dialog"></div>
+            </div>
+        </dialog>
         <script src="js/main.js" type="module"></script>
 </body>
 </html>
