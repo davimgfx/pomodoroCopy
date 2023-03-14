@@ -176,6 +176,20 @@ dialog h4{
 	color: gray;
 }
 
+.timer__header--dialog{
+	display: flex;
+	gap: 5px;
+	color: #D1D1D1;
+	padding: 25px 15px 0px 10px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+.fix--timer{
+	position: relative;
+	top: 4px
+}
+
 .timer-dialog{
 	display: flex;
 	justify-content: center;
@@ -198,7 +212,7 @@ dialog h4{
 
 .block{
 	display: block;
-	font-size: 16px;
+	font-size: 15px;
 	padding-top: 20px;
 	text-indent: 10px;
 	color: rgb(56, 56, 56);
