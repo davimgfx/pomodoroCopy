@@ -7,20 +7,25 @@ export default class Timer {
 			seconds: root.querySelector(".timer__part--seconds"),
 			control: root.querySelector(".timer__btn--control"),
 			reset: root.querySelector(".timer__btn--reset"),
+			buttonAudio: root.querySelector("#buttonAudio"),
+			fisinhAudio: root.querySelector("#finishAudio"),
 		};
 
 		this.interval = null;
 		this.remainingSeconds = 50*60;
 	
 		this.el.control.addEventListener("click", () => {
+			this.el.buttonAudio.play();
 			if(this.interval === null){
 				this.start()
+				
 			} else{
 				this.stop()
 			}
 		});
 
 		this.el.reset.addEventListener("click", () => {
+			this.el.buttonAudio.play();
 			this.remainingSeconds = 50*60
 			this.updateInterfaceTime()
 		});
@@ -54,6 +59,7 @@ export default class Timer {
 			this.updateInterfaceTime();
 
 			if (this.remainingSeconds == 0) {
+				this.el.fisinhAudio.play();
 				this.stop();
 			}
 		}, 1000);
@@ -86,6 +92,12 @@ export default class Timer {
 			<button class="timer__btn--control timer__btn--start button">START</button>
             <button type="button" class="timer__btn timer__btn--reset button">RESET</button>
 			</div>
+			<audio id="buttonAudio">
+				<source src="assets/buttonSound.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="finishAudio">
+				<source src="assets/ding.mp3" type="audio/mpeg">
+			</audio>
 		`;
 	}
 }
