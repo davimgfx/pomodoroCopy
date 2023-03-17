@@ -19,7 +19,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 250px;
+	gap: 280px;
 }
 
 .logo {
@@ -28,7 +28,7 @@ header {
 	justify-content: center;
 	gap: 3px;
 	color: white;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: 500;
 }
 
@@ -36,7 +36,7 @@ header {
 	position: relative;
 	height: 20px;
 	width: 20px;
-	top: 1px;
+	top: 0.5px;
 }
 
 .nav-bar ul {
@@ -47,8 +47,8 @@ header {
 	display: block;
 	color: #f6ffff;
 	background: #c86d6d;
-	font-size: 13px;
-	padding: 5px 15px;
+	font-size: 14px;
+	padding: 8px 15px;
 	transition: 0.2s;
 	margin: 15px 5px;
 	border-radius: 5px;

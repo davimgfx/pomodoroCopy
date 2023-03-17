@@ -38,10 +38,7 @@ export default class Navbar {
             </div>
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="" class="report">Report</a></a>
-                    </li>
                     <li><a href="#" class="setting" id="open__modal--setting">Setting</a></li>
-                    <li><a href="" class="login">Login</a></li>
                 </ul>
             </nav>
             <dialog id="setting-dialog">
