@@ -3,12 +3,12 @@ export default class Navbar {
 		root.innerHTML = Navbar.getHTML()
 
         this.el = {
-				report: root.querySelector(".report"),
 				setting: root.querySelector(".setting"),
-				login: root.querySelector(".login"),
 				openModalLinkSetting: root.querySelector("#open__modal--setting"),
 				closeModalButtonSetting: root.querySelector("#close__modal--setting"),
 				myDialogSetting: root.querySelector("#setting-dialog"),
+				pomodoroTimer: root.querySelector(".input__pomodoro--timer"),
+				confirmSetting: root.querySelector(".button__confirm"),
 			};
 
         this.el.openModalLinkSetting.addEventListener("click", (event) => {
@@ -29,6 +29,12 @@ export default class Navbar {
                 this.el.myDialogSetting.close();
             }
         });
+    })
+    
+    this.el.confirmSetting.addEventListener("click",() => {
+        this.pomodoroSeconds = Number(this.el.pomodoroTimer.value)
+        console.log(this.pomodoroSeconds)
+        this.el.myDialogSetting.close();
     })
 }
 
@@ -51,12 +57,12 @@ export default class Navbar {
             </div>         
             <h2 class="block">Time (minutes)</h2>
             <div class="timer-dialog">
-                <div class="pomodoro__timer--dialog ">Pomodoro <input type="number" class="input__timer-dialog input_pomodoro--timer"></div>
+                <div class="pomodoro__timer--dialog ">Pomodoro <input type="number" class="input__timer-dialog input__pomodoro--timer"></div>
                 <div class="shortbreak__timer--dialog">Short Break <input type="number" class="input__timer-dialog input_shortbreak--timer"></div>
                 <div class="longbreak__timer--dialog">Long Break <input type="number" class="input__timer-dialog input_longbreak--timer"></div>
-            </div>
+            </div> 
+            <button class="button__confirm">CONFIRM</button>
         </dialog>
-	</audio>
         `;
 	}
 }

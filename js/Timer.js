@@ -9,11 +9,10 @@ export default class Timer {
 			reset: root.querySelector(".timer__btn--reset"),
 			buttonAudio: root.querySelector("#buttonAudio"),
 			fisinhAudio: root.querySelector("#finishAudio"),
-		};
+		}
 
+		this.remainingSeconds = 50*60
 		this.interval = null;
-		this.remainingSeconds = 50*60;
-	
 		this.el.control.addEventListener("click", () => {
 			this.el.buttonAudio.play();
 			if(this.interval === null){
@@ -42,12 +41,12 @@ export default class Timer {
 	updateInterfaceControl() {
 		if (this.interval === null) {
 			this.el.control.innerHTML = `<button class="button" class="timer__btn--control timer__btn--start">START</button>`;
-			this.el.control.class.add("timer__brn--start");
-			this.el.control.class.remove("timer__brn--stop");
+			this.el.control.class.add("timer__btn--start");
+			this.el.control.class.remove("timer__btn--stop");
 		} else {
 			this.el.control.innerHTML = `<button class="button" class="timer__btn--control timer__btn--start">PAUSE</button>`;
 			this.el.control.class.add("timer__btn--stop");
-			this.el.control.class.remove("timer__brn--start");
+			this.el.control.class.remove("timer__btn--start");
 		}
 	}
 
@@ -77,12 +76,13 @@ export default class Timer {
 
 	static getHTML() {
 		return `
+			
             <nav class="nav__bar--timer">
                 <ul>
-                    <li class="pomodoro-li"><a href="" class="pomodoro-text">Pomodoro</a></a>
+                    <li class="select--one"><a href="" class="pomodoro--text">Pomodoro</a></a>
                     </li>
-                    <li><a href="" class="shortbreak">Short Break</a></li>
-                    <li><a href="" class="longbreak">Long Break</a></li>
+                    <li><a href="" class="shortbreak--text">Short Break</a></li>
+                    <li><a href="" class="longbreak--text">Long Break</a></li>
                 </ul>
             </nav>
 			<div class="timer__clock">
