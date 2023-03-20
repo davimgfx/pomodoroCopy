@@ -80,9 +80,7 @@ header {
 }
 
 .select--one {
-	background: #a44e4e;
-	border-radius: 5px;
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .nav__bar--timer ul li a:active {

@@ -26,9 +26,13 @@ export default class Timer {
 			this.play = 0;
 			this.el.minutes.textContent = "50";
 			this.el.seconds.textContent = "00";
+			this.el.pomodoro.classList.add("select--one");
 			this.el.shortBreak.classList.remove("select--one");
 			this.el.longBreak.classList.remove("select--one");
-			this.el.pomodoro.classList.add("select--one");
+			document.querySelector("body").style.background = "#BA4949";
+			document.querySelector(".timer").style.background = "#C15C5C";
+			document.querySelector("#open__modal--setting").style.background =
+				"#c86d6d";
 		});
 
 		// ShortBreak time
@@ -41,6 +45,10 @@ export default class Timer {
 			this.el.shortBreak.classList.add("select--one");
 			this.el.longBreak.classList.remove("select--one");
 			this.el.pomodoro.classList.remove("select--one");
+			document.querySelector("body").style.background = "#7D53A2";
+			document.querySelector(".timer").style.background = "#8A65AB";
+			document.querySelector("#open__modal--setting").style.background =
+				"#9775B5";
 		});
 
 		// LongBreak time
@@ -50,9 +58,13 @@ export default class Timer {
 			this.play = 2;
 			this.el.minutes.textContent = "15";
 			this.el.seconds.textContent = "00";
-			this.el.shortBreak.classList.remove("select--one");
 			this.el.longBreak.classList.add("select--one");
+			this.el.shortBreak.classList.remove("select--one");
 			this.el.pomodoro.classList.remove("select--one");
+			document.querySelector("body").style.background = "#AF4E91";
+			document.querySelector(".timer").style.background = "#B7609C";
+			document.querySelector("#open__modal--setting").style.background =
+			"#BF71A7";
 		});
 
 		// Start/Pause button
@@ -87,11 +99,11 @@ export default class Timer {
 	//Update buttons Control (Play/Pause)
 	updateInterfaceControl() {
 		if (this.interval === null) {
-			this.el.control.innerHTML = `<button class="button" class="timer__btn--control timer__btn--start">START</button>`;
+			this.el.control.innerHTML = `<button class="button timer__btn--control timer__btn--start">START</button>`;
 			this.el.control.classList.add("timer__btn--start");
 			this.el.control.classList.remove("timer__btn--stop");
 		} else {
-			this.el.control.innerHTML = `<button class="button" class="timer__btn--control timer__btn--start">PAUSE</button>`;
+			this.el.control.innerHTML = `<button class="button timer__btn--control timer__btn--start">PAUSE</button>`;
 			this.el.control.classList.add("timer__btn--stop");
 			this.el.control.classList.remove("timer__btn--start");
 		}
@@ -137,8 +149,8 @@ export default class Timer {
                 <span class="timer__part timer__part--minutes">50</span><span class="timer__part">:</span><span class="timer__part timer__part--seconds">00</span>
             </div>
 			<div class="controls">
-			<button class="timer__btn--control timer__btn--start button">START</button>
-            <button type="button" class="timer__btn timer__btn--reset button">RESET</button>
+			<button class="button timer__btn--control timer__btn--start">START</button>
+            <button class="button timer__btn timer__btn--reset">RESET</button>
 			</div>
 			<audio id="buttonAudio">
 				<source src="assets/buttonSound.mp3" type="audio/mpeg">

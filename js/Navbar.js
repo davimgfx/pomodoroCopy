@@ -44,7 +44,7 @@ export default class Navbar {
             </div>
             <nav class="nav-bar">
                 <ul>
-                    <li><a href="#" class="setting" id="open__modal--setting">Setting</a></li>
+                    <li class="setting--li"><a href="#" class="setting" id="open__modal--setting">Setting</a></li>
                 </ul>
             </nav>
             <dialog id="setting-dialog">
