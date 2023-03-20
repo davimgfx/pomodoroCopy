@@ -75,13 +75,14 @@ header {
 	display: block;
 	color: #f6ffff;
 	font-size: 16px;
-	padding: 3px 8px;
+	padding: 5px 8px;
 	transition: 0.2s;
 }
 
 .select--one {
 	background: #a44e4e;
 	border-radius: 5px;
+	font-weight: 600;
 }
 
 .nav__bar--timer ul li a:active {

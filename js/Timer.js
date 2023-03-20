@@ -13,6 +13,7 @@ export default class Timer {
 			shortBreak: root.querySelector(".shortbreak--li"),
 			longBreak: root.querySelector(".longbreak--li"),
 		};
+
 		// Variables
 		this.play = 0;
 		this.remainingSeconds = 50 * 60;
@@ -74,6 +75,7 @@ export default class Timer {
 		});
 	}
 
+	//Update Dislay (InterfaceTime)
 	updateInterfaceTime() {
 		const minutes = Math.floor(this.remainingSeconds / 60);
 		const seconds = this.remainingSeconds % 60;
@@ -82,6 +84,7 @@ export default class Timer {
 		this.el.seconds.textContent = seconds.toString().padStart(2, "0");
 	}
 
+	//Update buttons Control (Play/Pause)
 	updateInterfaceControl() {
 		if (this.interval === null) {
 			this.el.control.innerHTML = `<button class="button" class="timer__btn--control timer__btn--start">START</button>`;
@@ -94,6 +97,7 @@ export default class Timer {
 		}
 	}
 
+	//Starting countdown
 	start() {
 		if (this.remainingSeconds === 0) return;
 
@@ -110,6 +114,7 @@ export default class Timer {
 		this.updateInterfaceControl();
 	}
 
+	//Finished countdown
 	stop() {
 		clearInterval(this.interval);
 
@@ -120,7 +125,6 @@ export default class Timer {
 
 	static getHTML() {
 		return `
-			
             <nav class="nav__bar--timer">
                 <ul>
                     <li class="pomodorobreak--li select--one"><a href="" class="pomodoro--text">Pomodoro</a></a>
