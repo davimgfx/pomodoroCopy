@@ -3,4 +3,3 @@ import Navbar from "./Navbar.js";
 
 new Timer(document.querySelector(".timer"));
 new Navbar(document.querySelector(".header__navbar"));
-

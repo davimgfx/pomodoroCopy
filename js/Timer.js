@@ -9,24 +9,68 @@ export default class Timer {
 			reset: root.querySelector(".timer__btn--reset"),
 			buttonAudio: root.querySelector("#buttonAudio"),
 			fisinhAudio: root.querySelector("#finishAudio"),
-		}
-
-		this.remainingSeconds = 50*60
+			pomodoro: root.querySelector(".pomodorobreak--li"),
+			shortBreak: root.querySelector(".shortbreak--li"),
+			longBreak: root.querySelector(".longbreak--li"),
+		};
+		// Variables
+		this.play = 0;
+		this.remainingSeconds = 50 * 60;
 		this.interval = null;
+
+		// Pomodoro time
+		this.el.pomodoro.addEventListener("click", (event) => {
+			event.preventDefault();
+			this.remainingSeconds = 50 * 60;
+			this.play = 0;
+			this.el.minutes.textContent = "50";
+			this.el.seconds.textContent = "00";
+			this.el.shortBreak.classList.remove("select--one");
+			this.el.longBreak.classList.remove("select--one");
+			this.el.pomodoro.classList.add("select--one");
+		});
+
+		// ShortBreak time
+		this.el.shortBreak.addEventListener("click", (event) => {
+			event.preventDefault();
+			this.remainingSeconds = 5 * 60;
+			this.play = 1;
+			this.el.minutes.textContent = "05";
+			this.el.seconds.textContent = "00";
+			this.el.shortBreak.classList.add("select--one");
+			this.el.longBreak.classList.remove("select--one");
+			this.el.pomodoro.classList.remove("select--one");
+		});
+
+		// LongBreak time
+		this.el.longBreak.addEventListener("click", (event) => {
+			event.preventDefault();
+			this.remainingSeconds = 15 * 60;
+			this.play = 2;
+			this.el.minutes.textContent = "15";
+			this.el.seconds.textContent = "00";
+			this.el.shortBreak.classList.remove("select--one");
+			this.el.longBreak.classList.add("select--one");
+			this.el.pomodoro.classList.remove("select--one");
+		});
+
+		// Start/Pause button
 		this.el.control.addEventListener("click", () => {
 			this.el.buttonAudio.play();
-			if(this.interval === null){
-				this.start()
-				
-			} else{
-				this.stop()
+			if (this.interval === null) {
+				this.start();
+			} else {
+				this.stop();
 			}
 		});
 
+		// Reset button
 		this.el.reset.addEventListener("click", () => {
 			this.el.buttonAudio.play();
-			this.remainingSeconds = 50*60
-			this.updateInterfaceTime()
+			if (this.play === 0) this.remainingSeconds = 50 * 60;
+			if (this.play === 1) this.remainingSeconds = 5 * 60;
+			if (this.play === 2) this.remainingSeconds = 15 * 60;
+			this.updateInterfaceTime();
 		});
 	}
 
@@ -79,10 +123,10 @@ export default class Timer {
 			
             <nav class="nav__bar--timer">
                 <ul>
-                    <li class="select--one"><a href="" class="pomodoro--text">Pomodoro</a></a>
+                    <li class="pomodorobreak--li select--one"><a href="" class="pomodoro--text">Pomodoro</a></a>
                     </li>
-                    <li><a href="" class="shortbreak--text">Short Break</a></li>
-                    <li><a href="" class="longbreak--text">Long Break</a></li>
+                    <li class="shortbreak--li"><a href="" class="shortbreak--text">Short Break</a></li>
+                    <li class="longbreak--li"><a href="" class="longbreak--text">Long Break</a></li>
                 </ul>
             </nav>
 			<div class="timer__clock">
