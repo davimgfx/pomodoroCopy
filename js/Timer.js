@@ -102,7 +102,7 @@ export default class Timer {
 
 		this.el.minutes.textContent = minutes.toString().padStart(2, "0");
 		this.el.seconds.textContent = seconds.toString().padStart(2, "0");
-		document.title = `${minutes}:${seconds}`
+		document.title = `${this.el.minutes.textContent}:${this.el.seconds.textContent}`;
 		if(this.play === 0) document.title += ` - Time to focus!`;
 		if(this.play !== 0) document.title += ` - Time for a break!`;
 	}
