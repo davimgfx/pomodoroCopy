@@ -33,6 +33,11 @@ export default class Timer {
 			document.querySelector(".timer").style.background = "#C15C5C";
 			document.querySelector("#open__modal--setting").style.background =
 				"#c86d6d";
+			document.querySelector(".timer__btn--control").style.color = "#BA4949";
+			document.querySelector(".timer__btn").style.color = "#BA4949";
+			document.querySelector("link[rel*='icon']").href =
+				"assets/images/logored.png";
+			document.title = "50:00 - Time to focus!";
 		});
 
 		// ShortBreak time
@@ -49,6 +54,11 @@ export default class Timer {
 			document.querySelector(".timer").style.background = "#8A65AB";
 			document.querySelector("#open__modal--setting").style.background =
 				"#9775B5";
+			document.querySelector(".timer__btn--control").style.color = "#7D53A2";
+			document.querySelector(".timer__btn").style.color = "#7D53A2";
+			document.querySelector("link[rel*='icon']").href =
+				"assets/images/logopurple.png";
+			document.title = "5:00 - Time for a break!";
 		});
 
 		// LongBreak time
@@ -65,6 +75,10 @@ export default class Timer {
 			document.querySelector(".timer").style.background = "#B7609C";
 			document.querySelector("#open__modal--setting").style.background =
 			"#BF71A7";
+			document.querySelector(".timer__btn--control").style.color = "#AF4E91";
+			document.querySelector(".timer__btn").style.color = "#AF4E91";
+			document.querySelector("link[rel*='icon']").href = "assets/images/logopink.png";
+			document.title = "15:00 - Time for a break!";
 		});
 
 		// Start/Pause button
