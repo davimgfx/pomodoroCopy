@@ -102,6 +102,9 @@ export default class Timer {
 
 		this.el.minutes.textContent = minutes.toString().padStart(2, "0");
 		this.el.seconds.textContent = seconds.toString().padStart(2, "0");
+		document.title = `${minutes}:${seconds}`
+		if(this.play === 0) document.title += ` - Time to focus!`;
+		if(this.play !== 0) document.title += ` - Time for a break!`;
 	}
 
 	//Update buttons Control (Play/Pause)
