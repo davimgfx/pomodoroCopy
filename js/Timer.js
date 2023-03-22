@@ -100,8 +100,6 @@ export default class Timer {
 	updateInterfaceTime() {
 		const minutes = Math.floor(this.remainingSeconds / 60);
 		const seconds = this.remainingSeconds % 60;
-		const newLocal = timer();
-		console.log(newLocal)
 		this.el.minutes.textContent = minutes.toString().padStart(2, "0");
 		this.el.seconds.textContent = seconds.toString().padStart(2, "0");
 		document.title = `${this.el.minutes.textContent}:${this.el.seconds.textContent}`;
