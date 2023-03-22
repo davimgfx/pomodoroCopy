@@ -70,8 +70,9 @@ export default class Timer {
 			document.querySelector("body").style.background = "#AF4E91";
 			document.querySelector(".timer").style.background = "#B7609C";
 			document.querySelector("#open__modal--setting").style.background =
-			"#BF71A7";
-			document.querySelector("link[rel*='icon']").href = "assets/images/logopink.png";
+				"#BF71A7";
+			document.querySelector("link[rel*='icon']").href =
+				"assets/images/logopink.png";
 			document.title = "15:00 - Time for a break!";
 		});
 
@@ -99,12 +100,13 @@ export default class Timer {
 	updateInterfaceTime() {
 		const minutes = Math.floor(this.remainingSeconds / 60);
 		const seconds = this.remainingSeconds % 60;
-
+		const newLocal = timer();
+		console.log(newLocal)
 		this.el.minutes.textContent = minutes.toString().padStart(2, "0");
 		this.el.seconds.textContent = seconds.toString().padStart(2, "0");
 		document.title = `${this.el.minutes.textContent}:${this.el.seconds.textContent}`;
-		if(this.play === 0) document.title += ` - Time to focus!`;
-		if(this.play !== 0) document.title += ` - Time for a break!`;
+		if (this.play === 0) document.title += ` - Time to focus!`;
+		if (this.play !== 0) document.title += ` - Time for a break!`;
 	}
 
 	//Update buttons Control (Play/Pause)
