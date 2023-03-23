@@ -1,3 +1,4 @@
+"use strict";
 import Timer from "./Timer.js";
 import Navbar from "./Navbar.js";
 
