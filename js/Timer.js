@@ -31,8 +31,6 @@ export default class Timer {
 			this.el.longBreak.classList.remove("select--one");
 			document.querySelector("body").style.background = "#BA4949";
 			document.querySelector(".timer").style.background = "#C15C5C";
-			document.querySelector("#open__modal--setting").style.background =
-				"#c86d6d";
 			document.querySelector("link[rel*='icon']").href =
 				"assets/images/logored.png";
 			document.title = "50:00 - Time to focus!";
@@ -50,8 +48,6 @@ export default class Timer {
 			this.el.pomodoro.classList.remove("select--one");
 			document.querySelector("body").style.background = "#7D53A2";
 			document.querySelector(".timer").style.background = "#8A65AB";
-			document.querySelector("#open__modal--setting").style.background =
-				"#9775B5";
 			document.querySelector("link[rel*='icon']").href =
 				"assets/images/logopurple.png";
 			document.title = "5:00 - Time for a break!";
@@ -69,8 +65,6 @@ export default class Timer {
 			this.el.pomodoro.classList.remove("select--one");
 			document.querySelector("body").style.background = "#AF4E91";
 			document.querySelector(".timer").style.background = "#B7609C";
-			document.querySelector("#open__modal--setting").style.background =
-				"#BF71A7";
 			document.querySelector("link[rel*='icon']").href =
 				"assets/images/logopink.png";
 			document.title = "15:00 - Time for a break!";
