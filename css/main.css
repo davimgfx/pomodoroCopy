@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
 	box-sizing: border-box;
-	font-family: 'Rubik', sans-serif;
+	font-family: "Rubik", sans-serif;
 }
 
+html {
+	font-size: 62.5%;
+}
 body {
 	background: #ba4949;
 }
@@ -15,38 +19,37 @@ body {
 header {
 	width: 100%;
 	height: 80%;
-	box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.548);
+	box-shadow: -0.1rem -0.1rem 0.3rem rgba(0, 0, 0, 0.548);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 0;
+	padding: 1rem 0;
 }
 
 .logo {
 	color: white;
-	font-size: 1.3rem;
+	font-size: 2rem;
 	font-weight: 500;
 }
 
 #imglogo {
-	position: relative;
-	height: 20px;
-	width: 20px;
-	top: 0.5px;
+	height: 2rem;
+	width: 2rem;
+	transform: translateY(.3rem);
 }
 
 .timer {
-	height: 320px;
-	width: 480px;
-	margin: 50px auto;
-	padding: 20px 0px 30px;
+	height: 32rem;
+	width: 48rem;
+	margin: 5rem auto;
+	padding: 2rem 0 3rem;
 	background: #c15c5c;
-	border-radius: 5px;
+	border-radius: 0.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	font-size: 120px;
+	font-size: 12rem;
 	color: white;
 	font-weight: 600;
 }
@@ -54,56 +57,55 @@ header {
 .nav__bar--timer ul {
 	display: flex;
 	font-weight: 400;
-	padding: 0 0 15px 0;
+	padding: 0 0 1.5rem 0;
 }
 
 .nav__bar--timer ul li a {
 	display: block;
 	color: #f6ffff;
-	font-size: 16px;
-	padding: 5px 8px;
+	font-size: 1.6rem;
+	padding: 0.5rem 0.8rem;
 	transition: 0.2s;
 }
 
 .select--one {
 	font-weight: 700;
-	text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.438);
+	text-shadow: 0 0.3rem 0 rgba(0, 0, 0, 0.438);
 }
 
 .nav__bar--timer ul li a:active {
-	transform: translateY(3px);
+	transform: translateY(0.3rem);
 }
 
-.timer__clock{
-	padding-bottom: 20px;
+.timer__clock {
+	padding-bottom: 2rem;
 }
 .timer__part {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 
 .controls {
 	display: flex;
-	gap: 18px;
+	gap: 1.8rem;
 }
 
 .button {
 	display: block;
 	cursor: pointer;
 	border: none;
-	width: 150px;
-	height: 50px;
-	border-radius: 5px;
-	box-shadow: rgb(255, 255, 255) 0px 6px 0px;
-	font-size: 22px;
+	width: 15rem;
+	height: 5rem;
+	border-radius: 0.5rem;
+	box-shadow: rgb(255, 255, 255) 0 0.6rem 0;
+	font-size: 2.2rem;
 	color: black;
 	font-weight: 500;
 	background-color: white;
 	transition: color 0.5s ease-in-out 0s;
-	box-shadow: inset 0px -3px 1px 0px rgb(212, 212, 212);
+	box-shadow: inset 0 -0.3rem 0.1rem 0px rgb(212, 212, 212);
 }
 
 .button:active {
-	transform: translateY(-2px);
+	transform: translateY(-0.2rem);
 }
-
