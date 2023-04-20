@@ -36,7 +36,7 @@ header {
 #imglogo {
 	height: 2rem;
 	width: 2rem;
-	transform: translateY(.3rem);
+	transform: translateY(0.3rem);
 }
 
 .timer {
@@ -88,11 +88,11 @@ header {
 
 .controls {
 	display: flex;
+	text-align: center;
 	gap: 1.8rem;
 }
 
 .button {
-	display: block;
 	cursor: pointer;
 	border: none;
 	width: 15rem;
@@ -108,4 +108,79 @@ header {
 
 .button:active {
 	transform: translateY(-0.2rem);
+}
+
+@media (max-width: 600px) {
+	.timer {
+		font-size: 10rem;
+	}
+}
+
+@media (max-width: 530px) {
+	.timer {
+		height: 28rem;
+		width: 40rem;
+	}
+}
+
+@media (max-width: 450px) {
+	.timer {
+		height: 28rem;
+		width: 35rem;
+	}
+
+	.nav__bar--timer ul li a {
+		font-size: 1.6rem;
+	}
+	.button {
+		width: 10rem;
+		height: 3rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 410px) {
+	.timer {
+		height: 30rem;
+		width: 29rem;
+	}
+
+	.minutestosecond {
+		display: none;
+	}
+
+	.timer__part--seconds {
+		display: none;
+	}
+	.nav__bar--timer ul li a {
+		font-size: 1.5rem;
+	}
+
+	.button {
+		width: 10rem;
+		height: 5rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 300px) {
+	.timer {
+		height: 15rem;
+		width: 15rem;
+	}
+	.nav__bar--timer ul {
+		transform: translateY(1rem);
+	}
+	.nav__bar--timer ul li a {
+		display: none;
+	}
+	.controls {
+		transform: translateY(-1rem);
+		gap: 1rem 1rem;
+	}
+	.button {
+		width: 6rem;
+		height: 6rem;
+		font-size: 1.6rem;
+	}
 }

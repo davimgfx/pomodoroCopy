@@ -151,7 +151,7 @@ export default class Timer {
                 </ul>
             </nav>
 			<div class="timer__clock">
-                <span class="timer__part timer__part--minutes">50</span><span class="timer__part">:</span><span class="timer__part timer__part--seconds">00</span>
+                <span class="timer__part timer__part--minutes">50</span><span class="timer__part minutestosecond">:</span><span class="timer__part timer__part--seconds">00</span>
             </div>
 			<div class="controls">
 			<button class="button timer__btn--control timer__btn--start">START</button>
