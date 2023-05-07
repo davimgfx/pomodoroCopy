@@ -4,9 +4,9 @@ Este é um projeto inspirado no site Pomofocus.io, que simplifica todas as funci
 ## Configurações
 O projeto possui três modos diferentes:
 
-Pomodoro: um temporizador de 50 minutos, ideal para se concentrar em uma tarefa sem distrações.
-Short Break: uma pausa curta de 5 minutos, para descansar e se destrair um pouco.
-Long Break: uma pausa mais longa de 15 minutos, para relaxar e se recuperar após um período de trabalho intenso.
+*Pomodoro: um temporizador de 50 minutos, ideal para se concentrar em uma tarefa sem distrações.
+*Short Break: uma pausa curta de 5 minutos, para descansar e se destrair um pouco.
+*Long Break: uma pausa mais longa de 15 minutos, para relaxar e se recuperar após um período de trabalho intenso.
 
 ## Alterar Tempo
 Caso queira alterar a duração dos temporizadores, siga as instruções abaixo:
