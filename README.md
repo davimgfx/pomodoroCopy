@@ -54,3 +54,5 @@ this.el.pomodoro.addEventListener("click", (event) => {
 			document.title = "25:00 - Time to focus!"; 
 		});
 ```
+
+### Espero que essa documentação tenha sido útel! Se tiver mais alguma dúvida, podem me perguntar em minhas redes sociais disponibilizadas no meu perfil GitHub :).
