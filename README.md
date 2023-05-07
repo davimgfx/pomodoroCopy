@@ -16,7 +16,7 @@ Vá até a pasta js e abra o arquivo Timer.js.
 Procure pela linha que contém o código this.remainingSeconds, this.el.minutes.textContent e document.title que define a duração e a estética do temporizador.
 Edite o número de segundos de acordo com a duração que deseja definir.
 
-Por exemplo, para alterar a duração do modo Pomodoro para 25 minutos, substitua o valor 50 * 60 por 25 * 60, this.el.minutes.textContent = "50" para this.el.minutes.textContent = "25" e document.title = "50:00 - Time to focus!" para `document.title = "25:00 - Time to focus!":
+Por exemplo, para alterar a duração do modo Pomodoro para 25 minutos, substitua o valor de **this.remainingSeconds = 50 * 60 ** por  **25 * 60 **,  **this.el.minutes.textContent = "50"** para  **this.el.minutes.textContent = "25"** e **document.title = "50:00 - Time to focus!"** para **document.title = "25:00 - Time to focus!"**:
 
 ```
 this.el.pomodoro.addEventListener("click", (event) => {
