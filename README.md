@@ -40,9 +40,9 @@ Resultado final:
 ```
 this.el.pomodoro.addEventListener("click", (event) => {
 			event.preventDefault();
-			this.remainingSeconds = 25 * 60; 
+			this.remainingSeconds = 25 * 60; <-- Modificado!
 			this.play = 0;
-			this.el.minutes.textContent = "25"; 
+			this.el.minutes.textContent = "25"; <-- Modificado!
 			this.el.seconds.textContent = "00";
 			this.el.pomodoro.classList.add("select--one");
 			this.el.shortBreak.classList.remove("select--one");
@@ -51,7 +51,7 @@ this.el.pomodoro.addEventListener("click", (event) => {
 			document.querySelector(".timer").style.background = "#C15C5C";
 			document.querySelector("link[rel*='icon']").href =
 				"assets/images/logored.png";
-			document.title = "25:00 - Time to focus!"; 
+			document.title = "25:00 - Time to focus!"; <-- Modificado!
 		});
 ```
 
