@@ -1,6 +1,7 @@
 # pomodoroCopy ⏰
 Este é um projeto inspirado no site Pomofocus.io, que simplifica todas as funcionalidades para um máximo aproveitamento e foco. Ele foi criado com o objetivo de ajudar as pessoas a gerenciar melhor seu tempo e aumentar sua produtividade nos estudos e atividades.
 
+Link do projeto: *https://davimgfx.github.io/pomodoroCopy/*
 ## Configurações
 O projeto possui três modos diferentes:
 
