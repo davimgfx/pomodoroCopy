@@ -37,6 +37,7 @@ this.el.pomodoro.addEventListener("click", (event) => {
 ```
 
 Resultado final:
+```
 this.el.pomodoro.addEventListener("click", (event) => {
 			event.preventDefault();
 			this.remainingSeconds = 25 * 60; // <-- Edite aqui 
@@ -52,3 +53,4 @@ this.el.pomodoro.addEventListener("click", (event) => {
 				"assets/images/logored.png";
 			document.title = "25:00 - Time to focus!"; <-- Edite aqui 
 		});
+```
