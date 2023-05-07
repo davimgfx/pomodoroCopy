@@ -5,7 +5,7 @@ Este é um projeto inspirado no site Pomofocus.io, que simplifica todas as funci
 O projeto possui três modos diferentes:
 
 Pomodoro: um temporizador de 50 minutos, ideal para se concentrar em uma tarefa sem distrações.
-Short Break: uma pausa curta de 5 minutos, para descansar e recarregar as energias.
+Short Break: uma pausa curta de 5 minutos, para descansar e se destrair um pouco.
 Long Break: uma pausa mais longa de 15 minutos, para relaxar e se recuperar após um período de trabalho intenso.
 
 ## Alterar Tempo
@@ -16,7 +16,7 @@ Vá até a pasta js e abra o arquivo Timer.js.
 Procure pela linha que contém o código this.remainingSeconds, this.el.minutes.textContent e document.title que define a duração e a estética do temporizador.
 Edite o número de segundos de acordo com a duração que deseja definir.
 
-Por exemplo, para alterar a duração do modo Pomodoro para 25 minutos, substitua o valor 50 * 60 por 25 * 60, this.el.minutes.textContent = "50" para this.el.minutes.textContent = "25" e document.title = "50:00 - Time to focus!" para document.title = "25:00 - Time to focus!":
+Por exemplo, para alterar a duração do modo Pomodoro para 25 minutos, substitua o valor 50 * 60 por 25 * 60, this.el.minutes.textContent = "50" para this.el.minutes.textContent = "25" e document.title = "50:00 - Time to focus!" para `document.title = "25:00 - Time to focus!":
 
 ```
 this.el.pomodoro.addEventListener("click", (event) => {
