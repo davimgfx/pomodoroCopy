@@ -11,7 +11,7 @@ Apague o número 50 em this.remainingSeconds e escreva o tempo que desejar
 ```
 this.el.pomodoro.addEventListener("click", (event) => {
 			event.preventDefault();
-			this.remainingSeconds = 50 * 60;
+			this.remainingSeconds = 50 * 60; // ^^Edite aqui^^
 			this.play = 0;
 			this.el.minutes.textContent = "50";
 			this.el.seconds.textContent = "00";
