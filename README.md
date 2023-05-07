@@ -55,4 +55,4 @@ this.el.pomodoro.addEventListener("click", (event) => {
 		});
 ```
 
-### Espero que essa documentação tenha sido útel! Se tiver mais alguma dúvida, podem me perguntar em minhas redes sociais disponibilizadas no meu perfil GitHub :).
+Espero que essa documentação tenha sido útel! Se tiver mais alguma dúvida, podem me perguntar em minhas redes sociais disponibilizadas no meu perfil GitHub :).
