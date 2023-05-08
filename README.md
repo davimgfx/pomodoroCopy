@@ -13,7 +13,7 @@ O projeto possui três modos diferentes:
 ## Alterar Tempo
 Caso queira alterar a duração dos temporizadores, siga as instruções abaixo:
 
-1. **Baixe o projeto e abra-o em seu editor de código preferido.**
+1. **Clone o repositório e abra-o em seu editor de código preferido.**
 2. **Vá até a pasta js e abra o arquivo Timer.js.**
 3. **Procure pelas linhas que contém o código this.remainingSeconds, this.el.minutes.textContent e document.title que define a duração e a estética do temporizador.**
 4. **Edite o número de minutos de acordo com a duração que deseja definir.**
